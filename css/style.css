@@ -1,0 +1,61 @@
+@import "./normalize.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(8px)
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.btn {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  border: solid 1px #fff;
+  background-position: center;
+  background-size: cover;
+}
+
+#btn1 {
+  background-image: url('../assets/summer-bg.jpg');
+}
+
+#btn2 {
+  background-image: url('../assets/rainy-bg.jpg');
+}
+
+#btn3 {
+  background-image: url('../assets/winter-bg.jpg');
+}
+
+audio {
+  display: none;
+}
