@@ -1,5 +1,15 @@
 @import "./normalize.css";
 
+@font-face {
+  font-family: 'Roboto';
+  /* src: url('../fonts/Robotto-Medium.woff2') format('ttf'); */
+  src: url('../fonts/Roboto-Medium.ttf') format('ttf'),
+       url('../fonts/Roboto-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -17,6 +27,7 @@ a {
 
 img {
   max-width: 100%;
+  transition: transform 0.3s ease-in-out;
 }
 
 body {
@@ -28,11 +39,16 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  backdrop-filter: blur(8px)
+  backdrop-filter: blur(8px);
+  font-family: 'Roboto, sans-serif';
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 auto 20px;
+}
+
+.h1 {
+  color: orange;
 }
 
 .btn {
@@ -42,6 +58,15 @@ body {
   border: solid 1px #fff;
   background-position: center;
   background-size: cover;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+}
+
+.btn:hover img {
+  transform: scale(1.1);
 }
 
 #btn1 {
@@ -58,4 +83,9 @@ body {
 
 audio {
   display: none;
+}
+
+.input {
+  width: 120px;
+  margin: 0 auto;
 }
