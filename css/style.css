@@ -3,8 +3,8 @@
 @font-face {
   font-family: 'Roboto';
   /* src: url('../fonts/Robotto-Medium.woff2') format('ttf'); */
-  src: url('/fonts/Roboto-Medium.ttf') format('ttf'),
-       url('/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url('./fonts/Roboto-Medium.ttf') format('ttf'),
+       url('./fonts/Roboto-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -70,15 +70,15 @@ body {
 }
 
 #btn1 {
-  background-image: url('/assets/summer-bg.jpg');
+  background-image: url('../assets/summer-bg.jpg');
 }
 
 #btn2 {
-  background-image: url('/assets/rainy-bg.jpg');
+  background-image: url('../assets/rainy-bg.jpg');
 }
 
 #btn3 {
-  background-image: url('/assets/winter-bg.jpg');
+  background-image: url('../assets/winter-bg.jpg');
 }
 
 audio {

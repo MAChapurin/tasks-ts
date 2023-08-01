@@ -3,7 +3,7 @@ const btns = document.querySelectorAll('.btn');
 const audios = document.querySelectorAll('audio');
 const body = document.body;
 btns.forEach((btn) => btn.addEventListener('click', () => {
-    body.setAttribute('style', `background-image: url('../assets/${btn.dataset['bg']}.jpg');`);
+    body.setAttribute('style', `background-image: url('./assets/${btn.dataset['bg']}.jpg');`);
     audios.forEach(track => track.pause());
     const audio = document.querySelector(`[data-sound="${btn.dataset['link']}"]`);
     if (!audio)
