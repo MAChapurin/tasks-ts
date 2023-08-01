@@ -1,3 +1,4 @@
 ## Weather sounds
 
-В терминале в папки с проектом введите команду tsc, дождитесь пока не появиться папка build, затем запустите index.html c помощью live-server
+Запустите index.html c помощью live-server
+[посмотреть можно здесь](https://machapurin.github.io/weather-sounds/)
